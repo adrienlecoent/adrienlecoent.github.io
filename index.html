@@ -8,19 +8,19 @@
 </head>
 
 <body>
+
 <div id="container">
 
 	<div id="institution"><script type="text/javascript">institutionheader();</script></div>
     <div id="wrapper">
 	
-		<div id="nav">
-			<ul>     <li><a href="index.html">Home</a></li>
-					 <li><a href="page1.html">Research</a></li>
+		<div id="nav"> 
+			<ul>     <li class="active"><a href="index.html">Research</a></li>
+			<!--		 <li><a href="page1.html">Research</a></li> -->
 				 	 <li><a href="page2.html">Teaching</a></li>
 <!--				   	 <li><a href="page3.html">Projects</a></li> -->
 <!--					 <li><a href="page4.html">CV</a></li>  -->
 <!--					 <li><a href="page5.html">Friends</a></li> -->
-
 			</ul>
         </div>
 		<div id="banner">
@@ -29,13 +29,10 @@
 				<p>Phd Student</p>
 				<p>CMLA, ENS Paris-Saclay</p>
 			</div>
-			<div id="welc">
-				<h1>Welcome</h1>
-			</div>
 		</div>
    
 		<div id="page">
-			<div id="content">		        
+			<div id="content">	
 				<div id="sidebar">
 					<img src="myphoto.jpg" title="my photo" id="my_photo" />
 					<h3>Contact</h3>
@@ -51,53 +48,68 @@
 					Thanks to <a href="https://jonathanvacher.github.io/page1.html" target="_blank"> Jonathan Vacher</a> for letting me use his web page template.
 					 </p> 
 				</div>
-				
+	        
+				<div id="title"> 
+					<t1> Research activities </t1>
+				</div>	        
+	        		<div id="news"> 
+	        		<p> <t3> PhD Thesis (since 2014) </t3> at CMLA, ENS Paris-Saclay <br /> Under the supervision of <a href="http://fdevuyst.jimdo.com/" target="_blank"> Florian de Vuyst</a>, <a href="http://w3.lmt.ens-cachan.fr/site/php_perso/perso_page_lmt.php?nom=CHAMOIN&secteur=2" target="_blank"> Ludovic Chamoin</a>, and <a href="http://w3.lmt.ens-cachan.fr/site/php_perso/perso_page_lmt.php?nom=REY&secteur=2" target="_blank"> Christian Rey</a>. <br />
+	        		English title: Guaranteed Control Synthesis for Switched Space-Time Dynamical Systems <br /> 
+	        		French title: Synth&egravese de Contr&ocircle Guaranti pour des Syst&egravemes Dynamiques Spatio-Temporels 	&agrave Commutation  <br />
+	        		
+	        		
+	        		<br /> 
+	        		Main research fields: 
+	        		 <ul>
+  <li><p>Control of switched systems</li>
+  <li><p>Symbolic methods for control synthesis</li>
+  <li><p>Partial differential equations</li>
+  <li><p>Model order reduction</li>
+  <li><p>Distributed (composisitional) control synthesis</li>
+</ul> 
+
+	        		</div>
+			
+				<div id="title"> 
+					<t1> Conference Papers </t1>
+				</div>
+				<div id="paper">
+					<p> <t3> Guaranteed Control of Switched Control Systems Using Model Order Reduction and State-Space Bisection, </t3> A. Le Co&eumlnt, F. De Vuyst, L. Chamoin, C. Rey, L. Fribourg, <i> Open Access Series in Informatics, 2015, </i>
+				<a href="http://drops.dagstuhl.de/opus/volltexte/2015/5608/pdf/6.pdf" target="_blank"> pdf </a> </p>
+				</div>
+
+				<div id="paper">
+					<p> <t3> Control of Nonlinear Switched Systems Based on Validated Simulation, </t3> A. Le Co&eumlnt, J. Alexandre dit Sandretto, A. Chapoutot, L. Fribourg, <i> Symbolic and Numerical Methods for Reachability Analysis (SNR), 2016, </i>
+				<a href="http://www.lsv.ens-cachan.fr/Publis/PAPERS/PDF/LACF-snr16.pdf" target="_blank"> preprint </a> </p>
+				</div>
+			
+							<div id="paper">
+					<p> <t3> Distributed Synthesis of State-Dependent Switching Control, </t3> A. Le Co&eumlnt, L. Fribourg, N. Markey, F. De Vuyst, L. Chamoin, <i> Reachability Problems (RP'16), Lecture Notes in Computer Science 9899, 2016, </i>
+				<a href="http://www.lsv.ens-cachan.fr/Publis/PAPERS/PDF/LFMDC-rp16.pdf" target="_blank"> preprint </a> </p>
+				</div>
+			
+			
+					<div id="paper">
+					<p> <t3> Compositional Analysis of Boolean Networks Using Local Fixed-Point Iterations, </t3> A. Le Co&eumlnt, L. Fribourg, R. Soulat, <i> Reachability Problems (RP'16), Lecture Notes in Computer Science 9899, 2016, </i>
+				<a href="http://www.lsv.ens-cachan.fr/Publis/PAPERS/PDF/LFS-rp16.pdf" target="_blank"> preprint </a> </p>
+				</div>
+			
 				
 				<div id="title"> 
-					<t1> Latest News </t1>
+					<t1> Journal Papers </t1>
 				</div>
 				
-				<div id="news"> 
-					<p> <t2> RP'16 Paper: Distributed Synthesis of State-Dependent Switching Control </t2> <br /><br />
-					This <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-45994-3_9" target="_blank"> paper</a> presents a correct-by-design method of state-dependent
-control synthesis for linear discrete-time switching systems. Given an
-objective region R of the state space, the method builds a capture set
-S and a control which steers any element of S into R. The method
-works by iterated backward reachability from R. More precisely, S is
-given as a parametric extension of R, and the maximum value of the
-parameter is solved by linear programming. The method can also be used
-to synthesize a stability control which maintains indefinitely within R all
-the states starting at R. We explain how the synthesis method can be
-performed in a distributed manner. The method has been implemented
-and successfully applied to the synthesis of a distributed control of a
-concrete floor heating system with 11 rooms and 2<SUP>11</SUP> = 2048 switching
-modes. (preprint <a href="http://arxiv.org/abs/1604.01745" target ="_blank">here</a>)
-										
-<!--					distributed method for the synthesis of state-dependent controllers 					
-					dynamic texture model for the neuroscience of vision. It is used in a psychophysic study of speed perception embedded in a Bayesian model. The <a href="https://nips.cc/" target="_blank"> NIPS </a> (Neural Information Processing System) conference was held from 7 to 12 December 2015 in Montreal and gathers data scientists from many fields. --> </p>  
+				<div id="paper">
+					<p> <t3> Control of Mechanical Systems Using Set Based Methods </t3> A. Le Co&eumlnt, F. De Vuyst, L. Chamoin, C. Rey, L. Fribourg, <i> International Journal of Dynamics and Control, 2016, </i>
+					<a href="http://www.lsv.ens-cachan.fr/Publis/PAPERS/PDF/LDRCF-ijdc16.pdf" target="_blank"> preprint </a> </p>
 				</div>
 				
-				<div id="news"> 
-					<p> <t2> RP'16 Paper: Compositional Analysis of Boolean Networks Using Local Fixed-Point Iterations  </t2> <br /><br />
-					This <a href="http://link.springer.com/chapter/10.1007%2F978-3-319-45994-3_10" target="_blank"> paper</a> 
-presents a compositional method which allows to over-
-approximate the set of attractors and under-approximate the set of basins
-of attraction of a Boolean network (BN). This merely consists in replac-
-ing a global fixed-point computation by a composition of local fixed-
-point computations. Once these approximations have been computed, it
-becomes much more tractable to generate the exact sets of attractors
-and basins of attraction. We illustrate the interest of our approach on
-several examples, among which is a BN modeling a railway interlocking
-system with 50 nodes and millions of attractors.
-				
-					
-<!--					
-					
-					details precisely the <a href="http://www.cns.nyu.edu/heegerlab/content/publications/Heeger-siggraph95.pdf" target="_blank">Heeger-Bergen</a> texture synthesis algorithm. It comes with an online demo and a open source code in C. --> </p>
+				<div id="paper">
+					<p> <t3> Explicit Solution Format for Complex-Valued Natural Frequency of Beam with R-shunted Piezoelectric Laminate Transducer </t3> J. B. H&oslashgsberg, A. Le Co&eumlnt, <i> Proceedings of the Institution of Mechanical Engineers, Part C: Journal of Mechanical Engineering Science, 228(1), 31-44, 2014 </i>
+				</p>
 				</div>
-				
 
-
+				
 			</div>
 		</div>
     </div>
