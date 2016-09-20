@@ -52,17 +52,31 @@ body {
 #banner {
 	color:#FFF;
 	
-	
-	background-color:#FFF;
-	margin:0;
-	font-family: Georgia;
-	
-	background-image: url(tree390.jpg);
-	height: 390px;
 	width: 1200px;
+	height: 390px; 
 	
 
+	margin:0;
+	font-family: Georgia;
+
+	background-image: url(tree390.jpg) ;
+	background-repeat: no-repeat;
+  background-color:#FFF;
+ 	background-size: cover;
+	/*height: 390px;*/
+
 }
+
+#banner.logo {
+  background: url(logo_cmla.jpg) 0 0 no-repeat;
+  background-size: 100%;
+  height: 15%;
+  width: 15%;
+  position:absolute;
+  top:100px;
+  left:900px;
+}
+
 #name {
 	position: absolute;
 	top:105px;
