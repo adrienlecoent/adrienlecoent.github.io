@@ -1,0 +1,52 @@
+\paragraph{Switched systems}
+
+Switched systems are a sub-class of hybrid systems, extensively used...
+
+CPS...
+
+We are interested in synthesizing controllers for such systems. many approaches have been developed,
+some are specific for switched systems, others are more general.
+
+\paragraph{Controller synthesis}
+
+\begin{equation}
+ \dot x = A x + B u
+\end{equation}
+
+
+state of the art of switched systems: lyapunov approaches and theoretical approaches,
+optimal control through optimization... 
+Many results for linear systems. 
+
+
+Here:  Symbolic control, which uses the computer tool with an automated method for 
+(mostly offline) controller synthesis. 
+Several approaches as well, available for linear and/or nonlinear systems: 
+\begin{itemize}
+  \item finite state abstraction by (alternating) approximate bisimulation [PESSOA]
+  \item finite state abstraction for monotone systems
+ \item $\varepsilon$ bisimulation. [Girard]
+  \item Feedback refinement relations. [SCOTS,Reissig,...]
+  \item [Sriram]
+\end{itemize}
+
+All these approaches present the same drawback, they are all subject to the so called 
+{\em curse of dimensionality}, which means that the computational cost of 
+the associated algorithms is exponential in the dimension $n$ of the state. 
+Approaches looking further in time (sequences of control inputs) add an exponential 
+complexity with respect to the number of switching modes and the number 
+of time steps considered.
+
+\paragraph{Reachability analysis}
+
+
+
+
+\paragraph{MINIMATOR}
+
+
+
+
+\section{Applications}
+
+sss

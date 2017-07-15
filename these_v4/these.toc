@@ -1,0 +1,128 @@
+\select@language {french}
+\select@language {english}
+\contentsline {paragraph}{Switched systems}{6}
+\contentsline {paragraph}{Controller synthesis}{6}
+\contentsline {paragraph}{Reachability analysis}{6}
+\contentsline {paragraph}{Model Order Reduction}{6}
+\contentsline {paragraph}{Contributions}{7}
+\contentsline {section}{\numberline {0.1}???}{7}
+\contentsline {section}{\numberline {0.2}Control of switched systems}{7}
+\contentsline {section}{\numberline {0.3}Symbolic control}{7}
+\contentsline {section}{\numberline {0.4}Reachability analysis}{8}
+\contentsline {section}{\numberline {0.5}Problem of $(R,S)$-stability}{8}
+\contentsline {section}{\numberline {0.6}reachability and RK methods}{8}
+\contentsline {section}{\numberline {0.7}Introduction}{8}
+\contentsline {section}{\numberline {0.8}Related work}{9}
+\contentsline {section}{\numberline {0.9}Euler's method/RK methods}{10}
+\contentsline {section}{\numberline {0.10}Introduction}{11}
+\contentsline {paragraph}{Control of switching systems}{11}
+\contentsline {paragraph}{Related Work}{12}
+\contentsline {paragraph}{Implementation}{12}
+\contentsline {subsection}{\numberline {0.10.1}Introduction}{13}
+\contentsline {chapter}{\numberline {1}Switched systems}{14}
+\contentsline {section}{\numberline {1.1}Switched systems}{15}
+\contentsline {section}{\numberline {1.2}General principle}{17}
+\contentsline {subsection}{\numberline {1.2.1}The state-space bisection algorithm}{19}
+\contentsline {subsection}{\numberline {1.2.2}A covering of balls}{23}
+\contentsline {subsection}{\numberline {1.2.3}Improving the research of patterns}{23}
+\contentsline {subsection}{\numberline {1.2.4}Computational cost}{26}
+\contentsline {chapter}{\numberline {2}Reachable set computation}{28}
+\contentsline {section}{\numberline {2.1}Zonotopes and linear systems}{29}
+\contentsline {section}{\numberline {2.2}Validated simulation and state-space bisection}{30}
+\contentsline {subsection}{\numberline {2.2.1}Validated simulation}{31}
+\contentsline {subsubsection}{Control synthesis}{34}
+\contentsline {subsection}{\numberline {2.2.2}Experimentations}{34}
+\contentsline {subsubsection}{A linear example: boost DC-DC converter}{34}
+\contentsline {subsubsection}{A polynomial example}{35}
+\contentsline {subsubsection}{Building ventilation}{36}
+\contentsline {subsubsection}{A path planning problem}{38}
+\contentsline {subsection}{\numberline {2.2.3}Performance tests}{39}
+\contentsline {subsection}{\numberline {2.2.4}Conclusion}{41}
+\contentsline {section}{\numberline {2.3}Sampled switched systems with one-sided Lipschitz conditions}{42}
+\contentsline {subsection}{\numberline {2.3.1}Lipschitz and one-sided Lipschitz condition}{42}
+\contentsline {paragraph}{Computation of constants $\lambda _j$, $L_j$ and $C_j$}{43}
+\contentsline {paragraph}{Origin of the OSL property}{43}
+\contentsline {subsection}{\numberline {2.3.2}A note on the OSL constant for linear systems}{43}
+\contentsline {subsection}{\numberline {2.3.3}Euler approximate solutions}{45}
+\contentsline {subsection}{\numberline {2.3.4}Application to control synthesis}{48}
+\contentsline {subsection}{\numberline {2.3.5}Numerical experiments and results}{51}
+\contentsline {subsubsection}{Four-room apartment}{51}
+\contentsline {subsubsection}{DC-DC converter}{52}
+\contentsline {subsubsection}{Polynomial example}{53}
+\contentsline {subsubsection}{Two-tank system}{54}
+\contentsline {subsubsection}{Helicopter}{55}
+\contentsline {subsubsection}{Analysis and comparison of results}{56}
+\contentsline {subsection}{\numberline {2.3.6}Final Remarks}{57}
+\contentsline {chapter}{\numberline {3}Disturbances and distributed control}{58}
+\contentsline {section}{\numberline {3.1}Distributed control using zonotopes}{59}
+\contentsline {paragraph}{Plan}{59}
+\contentsline {subsection}{\numberline {3.1.1}State-dependent Switching Control}{59}
+\contentsline {subsubsection}{Control modes}{59}
+\contentsline {subsubsection}{Control patterns}{61}
+\contentsline {subsection}{\numberline {3.1.2}Control Synthesis Using Tiling}{62}
+\contentsline {subsubsection}{Tiling}{62}
+\contentsline {subsubsection}{Parametric extension of tiling}{62}
+\contentsline {subsubsection}{Generate-and-test tilings}{63}
+\contentsline {subsubsection}{Tiling refinement}{63}
+\contentsline {subsubsection}{Iterated macro-step control synthesis}{64}
+\contentsline {subsection}{\numberline {3.1.3}Centralized control}{65}
+\contentsline {subsubsection}{Tiling test procedure}{65}
+\contentsline {subsubsection}{Stability as a special case of reachability}{66}
+\contentsline {subsection}{\numberline {3.1.4}Distributed control}{67}
+\contentsline {subsubsection}{Background}{67}
+\contentsline {subsubsection}{Tiling test procedure}{67}
+\contentsline {subsection}{\numberline {3.1.5}Case Study}{73}
+\contentsline {subsubsection}{Robustness Experiments}{74}
+\contentsline {subsection}{\numberline {3.1.6}Continuous-time case}{75}
+\contentsline {subsection}{\numberline {3.1.7}Reachability in continuous time}{75}
+\contentsline {subsubsection}{Distributed control}{76}
+\contentsline {subsubsection}{Application}{78}
+\contentsline {subsection}{\numberline {3.1.8}Final Remarks}{79}
+\contentsline {section}{\numberline {3.2}Perturbed and distributed Euler scheme}{80}
+\contentsline {paragraph}{Computation of constants $\lambda _j$ and $\gamma _j$, $L_j$ and $C_j$}{81}
+\contentsline {paragraph}{Perturbed Euler's scheme}{81}
+\contentsline {paragraph}{Linear systems {\color {red}est-ce que c'est necessaire???}}{83}
+\contentsline {paragraph}{Simulations}{83}
+\contentsline {section}{\numberline {3.3}Distributed synthesis}{83}
+\contentsline {section}{\numberline {3.4}Application}{87}
+\contentsline {section}{\numberline {3.5}Final remarks and future work}{89}
+\contentsline {chapter}{\numberline {4}Control of high dimensional ODEs}{90}
+\contentsline {section}{\numberline {4.1}Background}{92}
+\contentsline {section}{\numberline {4.2}Problem setting}{93}
+\contentsline {section}{\numberline {4.3}Model Order Reduction}{95}
+\contentsline {subsection}{\numberline {4.3.1}The Balanced Truncation}{97}
+\contentsline {subsection}{\numberline {4.3.2}Error Bounding}{98}
+\contentsline {subsubsection}{Error bounding for the output trajectory}{98}
+\contentsline {subsubsection}{Error bounding for the state trajectory}{99}
+\contentsline {section}{\numberline {4.4}Reduced Order Control}{99}
+\contentsline {subsection}{\numberline {4.4.1}Offline Procedure}{100}
+\contentsline {subsection}{\numberline {4.4.2}Semi-Online Procedure}{101}
+\contentsline {section}{\numberline {4.5}Numerical Results}{103}
+\contentsline {subsection}{\numberline {4.5.1}Thermal Problem on a Metal Plate}{103}
+\contentsline {subsection}{\numberline {4.5.2}Vibrating Beam}{105}
+\contentsline {subsection}{\numberline {4.5.3}Vibrating Aircraft Panel}{108}
+\contentsline {section}{\numberline {4.6}Extension to Output Feedback Control}{109}
+\contentsline {subsection}{\numberline {4.6.1}Partial observation}{111}
+\contentsline {subsection}{\numberline {4.6.2}Convergence of the observer}{111}
+\contentsline {subsection}{\numberline {4.6.3}Observer based decomposition}{113}
+\contentsline {subsection}{\numberline {4.6.4}Reduced output feedback control}{113}
+\contentsline {section}{\numberline {4.7}Final Remarks}{115}
+\contentsline {chapter}{\numberline {5}Control of PDEs}{117}
+\contentsline {section}{\numberline {5.1}Introduction}{118}
+\contentsline {section}{\numberline {5.2}Setting of the problem}{119}
+\contentsline {section}{\numberline {5.3}Spectral decomposition and EIM}{120}
+\contentsline {subsection}{\numberline {5.3.1}Problem statement}{120}
+\contentsline {subsection}{\numberline {5.3.2}Spectral Model Reduction}{121}
+\contentsline {subsection}{\numberline {5.3.3}Error bounding}{124}
+\contentsline {section}{\numberline {5.4}$L^2$ guaranteed control}{125}
+\contentsline {subsection}{\numberline {5.4.1}Transformation of the problem}{126}
+\contentsline {subsection}{\numberline {5.4.2}Stability requirements}{126}
+\contentsline {subsection}{\numberline {5.4.3}Strategy for stability control}{129}
+\contentsline {subsection}{\numberline {5.4.4}Certified reduced basis for control}{130}
+\contentsline {subsubsection}{A posteriori error estimation}{131}
+\contentsline {subsubsection}{Greedy algorithm and reduced bases}{132}
+\contentsline {subsection}{\numberline {5.4.5}Switching control synthesis by stability of error balls}{133}
+\contentsline {section}{\numberline {5.5}Reliable measurements, online control, and other applications}{133}
+\contentsline {section}{\numberline {5.6}Discussion}{133}
+\contentsline {section}{\numberline {5.7}Case studies}{135}
+\contentsline {subsection}{\numberline {5.7.1}Four-room apartment}{135}

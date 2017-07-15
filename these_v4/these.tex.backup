@@ -1,0 +1,357 @@
+%%%%
+%%
+%%
+%%  Utiliser pdflatex pagedegardetheseEDMH.tex
+%%
+%%
+%%%%
+\documentclass[a4paper,12pt]{report}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,bm}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+%  \usepackage[frenchb]{babel}
+\usepackage[english,frenchb]{babel}
+\usepackage{graphicx}
+\usepackage{fullpage}
+\usepackage{algorithm,algorithmic}
+\usepackage{cite}
+\usepackage{lipsum}
+\usepackage{color}
+\usepackage{mathabx}
+% \usepackage{multicol}
+% \usepackage{savesym}
+% \usepackage{underscore}           % Only needed if you use pdflatex.
+% \usepackage{epsfig, xspace, bm, mathrsfs}
+% \usepackage{multimedia}
+% \usepackage{xcolor}
+% \usepackage{array} 
+% \usepackage{calc}
+% \usepackage{enumitem}
+% \usepackage{hyperref}
+
+
+\newtheorem{problem}{Problem}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+% \newtheorem{proof}{Proof}
+\newtheorem{remark}{Remark}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\newtheorem{lemma}{Lemma}
+
+
+%%%% Commandes
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\seq}{\subseteq}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\todo}{\color{red}}
+
+\newcommand{\bv}{\bm{v}}
+\newcommand{\ba}{\bm{a}}
+\newcommand{\bbb}{\bm{b}}
+\newcommand{\bu}{\bm{u}}
+\newcommand{\bx}{\bm{x}}
+\newcommand{\by}{\bm{y}}
+\newcommand{\bxi}{\bm{\xi}}
+\newcommand{\bbeta}{\bm{\beta}}
+\newcommand{\bw}{\bm{w}}
+\newcommand{\wt}{\widetilde}
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1 
+    \right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
+    
+\def\Prop{\ensuremath{\textit{Prop}}}
+\def\Reach{\ensuremath{\textit{Reach}}}
+
+\topmargin=-5mm
+\textwidth=150mm
+\oddsidemargin=0mm
+\textheight=250mm
+
+\graphicspath{{logos/}}
+
+\begin{document}
+\thispagestyle{empty}
+\vspace{-2cm}
+
+\voffset-10pt
+
+
+%%%
+%% premiere ligne avec logo légaux et numéro national de thèse
+%% (modifier les symboles % en début de lignes 
+%%  pour obtenir la configuration souhaitée)
+%%%
+\noindent
+\hspace*{-1cm}\hbox{\includegraphics[width=8.6cm]{ed_edmh-h.jpg}} 
+\hfill 
+\hspace*{-0.4cm}{\small {\bf NNT : 2016SACLY000}}
+%%%
+%% Numéro National de Thèse, à préciser lors du second dépôt 
+%% de la thèse post-soutenance
+%%%
+\hfill
+%%%
+%% logo Etablissement inscripteur
+%% (modifier les symboles % en début de lignes 
+%% pour obtenir la configuration souhaitée, et ajuster 
+%% éventuellement la taille) En cas de cotutelle internationale, 
+%% mettre à la place le logo de l'université étrangère et rajouter 
+%% en bas de page le logo de l'établissement inscripteur
+%%%
+%\hbox{\includegraphics[width=2.3cm]{logoCentraleSupelec.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoHEC.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoENSAE.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoENSCachan.jpg}}
+\hbox{\includegraphics[width=2cm]{ens-paris-saclay-2016.jpg}}
+%\hbox{\includegraphics[width=1.5cm]{logoENS.jpg}}
+%\hbox{\includegraphics[width=1.9cm]{logoENSTA.jpg}}
+% \hbox{\includegraphics[width=2.7cm]{logoUPSud_UPSaclay.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoTelecom.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoEvry.jpg}}
+%\hbox{\includegraphics[width=2.2cm]{logoUVSQ.jpg}}
+%\hbox{\includegraphics[width=2.5cm]{logoX.jpg}}
+\vspace{7mm}
+
+\begin{center}
+{\Large\bf TH\`ESE DE DOCTORAT}
+\end{center}
+\begin{center}
+{de }
+\end{center}
+\begin{center}
+ {\Large\sc l'Universit\'e Paris-Saclay}\\
+  \vspace*{0.4cm}
+\'Ecole doctorale de math\'ematiques Hadamard (EDMH, ED 574)\\  
+ \vspace*{0.4cm} 
+%%%
+%% nom \'etablissement inscripteur
+%%%
+{\small \it \'Etablissement d'inscription : } 
+%    Centrale-Sup\'elec\\
+%    Ecole polytechnique\\
+%    Ecole normale sup\'erieure\\
+%    Ecole normale sup\'erieure de Cachan\\
+%    \'Ecole nationale de la statistique et de l'administration \'economique\\
+%    \'Ecole nationale sup\'erieure de techniques avanc\'ees\\
+%    Ecole des hautes \'etudes commerciales de Paris\\
+%    Telecom SudParis\\
+%    Telecom ParisTech\\
+%    Universit\'e d'Evry-Val d'Essonne\\
+    Universit\'e Paris-Sud\\
+%   Universit\'e de Versailles Saint-Quentin-en-Yvelines\\  
+ \vspace*{0.2cm} 
+%%%
+%% nom \'etablissement(s) d'accueil, si diff\'erent du pr\'ec\'edent
+%%%
+{\small \it \'Etablissement d'accueil : }    
+%    AgroParisTech\\
+%    Commissariat \`a l'\'energie atomique et aux \'energies alternatives\\
+    Institut des hautes \'etudes scientifiques\\
+%    Institut national de la recherche agronomique\\
+\vspace*{0.2cm} 
+%%%
+%% nom laboratoire(s) d'accueil
+%%%
+{\small \it Laboratoire d'accueil : }     
+%  Centre de math\'ematiques appliqu\'ees de Polytechnique, UMR 7641 CNRS\\
+%  Centre de math\'ematiques et de leurs applications, UMR 8536 CNRS\\
+%  Centre de math\'ematiques Laurent Schwartz, UMR 7640 CNRS\\
+%  D\'epartement de math\'ematiques et applications, UMR 8553 CNRS\\
+%  ENSAE-X Centre d'\'economie, statistique et sociologie, UMR 9194 CNRS\\
+%  F\'ed\'eration de Math\'ematiques, FR 3487 CNRS\\
+%  Groupement de recherche et d'\'etudes en gestion (GREGHEC), UMR 8071 CNRS\\
+%  Institut de physique th\'eorique de Saclay, URA 2306 CNRS\\
+Laboratoire Alexander Grothendieck (ERL 9216 CNRS)\\
+%  Laboratoire de math\'ematiques d'Orsay, UMR 8628 CNRS\\
+%  Laboratoire de math\'ematiques de Versailles, UMR 8100 CNRS\\
+%  Laboratoire de math\'ematiques et mod\'elisation dâ€™\'Evry, UMR 8071 CNRS-INRA\\
+%  Laboratoire traitement et communication de l'information, UMR 5141 CNRS\\
+%  Math\'ematiques et informatique appliqu\'ees, UMR 518 INRA\\
+%  Math\'ematiques et informatique appliqu\'ees du g\'enome \`a l'environnement, UR 1404
+%  Services r\'epartis, architectures, mod\'elisation, validation, administration des r\'eseaux, UMR 5157 CNRS\\
+%  Unit\'e de math\'ematiques appliqu\'ees, ENSTA-CNRS-INRIA\\
+\vspace*{0.2cm}
+\end{center}
+
+
+
+
+\begin{center}
+{\it Sp\'ecialit\'e de doctorat : } 
+%%%
+%%  Choisir l'une des trois spécialités suivantes (soumis à
+%%  accord du comité de direction de l'EDMH)
+%%%
+{\large Math\'ematiques fondamentales}
+%{\large Math\'ematiques appliquées}
+%{\large Math\'ematiques aux interfaces}
+\end{center}
+
+\vspace{5mm}
+
+\begin{center}
+{\large\bf Pr\'enom NOM}
+\end{center}
+
+\vspace{3mm}
+ 
+\begin{center}
+{\Large Titre de la th\`ese}
+%%%
+%% éventuellement sur deux lignes
+%%%
+\end{center}
+
+
+\vspace{10mm}
+
+\noindent{\small \it Date de soutenance~: } Jour Mois Ann\'ee
+
+\vspace{5mm}
+
+\noindent
+{\small \it Apr\`es avis des rapporteurs~: }
+\begin{tabular}{l} {\sc Pr\'enom NOM} (Institution)\vspace{1mm}  \\
+{\sc  Pr\'enom NOM} (Institution)\\
+\end{tabular}
+
+\vspace{8mm}
+
+\noindent
+{\small \it Jury de soutenance~: }
+%%%
+%% par ordre alphabétique des membres
+%%
+%% version avant soutenance à adapter (un jury peut contenir 
+%% tout ou partie des rapporteurs, tout au partie des codirecteurs de thèses,
+%% voire des invités). Le président du jury est choisi par le jury en 
+%% son sein le jour de la soutenance, et est indiqué sur les exemplaires 
+%% post-soutenance
+%% En cas d'absense d'un membre de jury prévu, les exemplaires post-thèse 
+%% ne doivent faire figurer que les présents.
+%%%%
+\begin{tabular}{ll}
+{\sc   Pr\'enom NOM}&(Institution) {\small Rapporteur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Codirecteur de th\`ese}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Examinateur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Examinateur}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Codirecteur de th\`ese}\vspace{1mm}\\
+{\sc   Pr\'enom NOM}&(Institution) {\small Invit\'e}\vspace{1mm}\\
+\end{tabular}
+
+
+\vfill
+\noindent
+\hbox{\includegraphics[width=2.2cm]{logo_fmjh.jpg}}
+\hfill 
+%%%
+%% logo Etablissement d'accueil, si différent du précédent
+%% (modifier les symboles % en début de lignes 
+%% pour obtenir la configuration souhaitée, et ajuster 
+%% éventuellement la taille)
+%%%
+% \hbox{\includegraphics[width=2cm]{logoIHES.jpg}}
+%\hbox{\includegraphics[width=2.1cm]{logoINRA.jpg}}
+%\hbox{\includegraphics[width=2.5cm]{logoAgro.jpg}}
+%\hbox{\includegraphics[width=1.5cm]{logoCEA.jpg}}
+\hfill
+%%%
+%% logo laboratoire(s) d'accueil, s'il existe
+%%%
+%\hbox{\includegraphics[width=2cm]{logoCMAP.jpg}}
+% \hbox{\includegraphics[width=2.4cm]{logoCMLA.jpg}}
+\hbox{\includegraphics[width=2.4cm]{logo-cmla-2017.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoCMLS.jpg}}
+%\hbox{\includegraphics[width=4cm]{logoDMA.jpeg}}
+%\hbox{\includegraphics[width=2.2cm]{logoGREHEC.jpg}}
+%\hbox{\includegraphics[width=2.1cm]{logoIPhT.jpeg}}
+% \hbox{\includegraphics[width=2cm]{logoLAG.jpg}}
+%\hbox{\includegraphics[width=1.6cm]{logoLAMME.jpg}}
+%\hbox{\includegraphics[width=3cm]{logoLMO.jpg}}
+%\hbox{\includegraphics[width=3.4cm]{logoLMV.jpeg}}
+%\hbox{\includegraphics[width=2.7cm]{logoMaIAGE.png}}
+%\hbox{\includegraphics[width=2.5cm]{logoSAMOVAR.jpg}}
+%\hbox{\includegraphics[width=2cm]{logoUMA.jpg}}
+\hfill \includegraphics[width=1cm]{pictoParis-Saclay.jpg}
+
+
+
+
+\newpage
+%%%
+%%
+%% Quatrième de couverture (last cover page of the memoirs)
+%%
+%%%
+
+\hbox{\includegraphics[width=8.6cm]{ed_edmh-h.jpg}}
+
+
+\bigskip
+\noindent\fbox{\parbox{\textwidth}{
+{\bf Titre : }  Titre en français
+
+\medskip
+{\bf Mots Clefs : }  Mettre de 3 à 6 mots clefs
+
+\medskip
+{\bf Résumé : } 
+
+
+\vspace{7cm}
+
+}}
+
+\bigskip
+\noindent\fbox{\parbox{\textwidth}{
+{\bf Title : }  Title in english
+
+\medskip
+{\bf Keys words : }  3 to 6  key words (in english)
+
+\medskip
+{\bf Abstract : } 
+
+
+\vspace{7cm}
+
+}}
+
+\vfill
+\hfill \includegraphics[width=1cm]{pictoParis-Saclay.jpg}
+
+\selectlanguage{english}
+
+\tableofcontents
+
+\chapter*{General Introduction}
+\include{introduction/introduction}
+\chapter{Switched systems}
+\label{chap:0}
+\include{part_0/part0}
+\chapter{Reachable set computation}
+\label{chap:1}
+\include{part_1/part1}
+\chapter{Disturbances and distributed control}
+\label{chap:2}
+\include{part_2/part2}
+\chapter{Comparison with state-of-the-art and extensions}
+\include{part_3/part3}
+% \chapter{Distributed control 2}
+% \include{part_4/part4}
+\chapter{Control of high dimensional ODEs}
+\include{part_5/part5}
+\chapter{Control of PDEs}
+\include{part_6/part6}
+\chapter*{Appendices}
+\include{appendices/appendix1}
+%-----------------------------
+
+
+\bibliographystyle{plain}
+\bibliography{biblio} 
+
+\end{document}
+

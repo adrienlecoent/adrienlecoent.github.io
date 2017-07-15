@@ -1,0 +1,132 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+
+%opening
+\title{plan}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Objective: control of switched PDEs/ controlled PDEs, high dimensional switched systems (ODEs) 
+
+
+
+\section{Control of switched systems represented by ODEs}
+\subsection{Definition of a switched system}
+\subsection{State-of-the-art methods for the control of switched systems}
+
+  \begin{itemize}
+    \item Lyapunov approaches 
+    \item state space discretization (Antoine Girard)
+   \item Optimal control (HJB, optimization)
+  \end{itemize}
+
+  
+
+
+\subsection{MINIMATOR}  
+\subsubsection{Linear systems}
+Romain Soulat
+
+\subsubsection{Nonlinear systems}
+
+article avec Alexandre Chapoutot et Julien Alexandre
+
+
+\subsubsection{Distributed systems}
+article avec Nicolas Markey
+
+
+
+\subsubsection{Other systems}
+
+article sur les boolean systems
+
+
+\section{Application to the control of (discretized) PDEs}
+\subsection{MOR methods, and why they are needed}
+
+Control algorithms are expensive, need of reducing the computational cost:
+\begin{itemize}
+ \item MOR 
+ \item Distributed control
+\end{itemize}
+
+
+Issues with MOR:
+
+Switched = need of several RO models ?
+
+Problem of boundary conditions 
+
+MOR methods: 
+\begin{itemize}
+ \item Controller methods: Balanced truncation, moment matching method
+ \item Computational mechanics methods: POD, PGD, spectral methods
+\end{itemize}
+
+
+
+
+\subsection{Analysis}
+
+What is needed: 
+\begin{itemize}
+ \item representing the short time behavior precisely (with a switched system, one never
+reaches a stationary solution)
+  \item one reduced state space (common for the possibly multiple RO models): interpolation? 
+  \item dimension $<$ 10
+  \item no dirichlet BC ? (Florian ?)
+  \item an initial reduced state rectangle
+\end{itemize}
+
+
+\subsection{Theoretical results}
+Theoretical results (cf. Florian)
+
+
+\subsection{Numerical approaches}
+\subsubsection{Control of PDEs with balanced truncation}
+article SynCop + journal 
+
+
+\subsubsection{Control of more complicated PDEs with PGD (WIP)}
+
+One ROM per zonotope, build during the decomposition
+
+NB: need of an initial condition to build the PGD.
+
+We want to control a zonotope $Z$ centered in $c$. 
+
+Interpolated points given by matrix $C$ (to begin: random interpolated points)
+
+
+minimization of: 
+
+
+\begin{equation}
+ \min_{u_0} \beta \| C u_0 - c \|^2 + \alpha_1 \| u_0 - sol_1(x,\tau) \|^2 + \alpha_2 \| u_0 - sol_2(x,\tau) \|^2
+\end{equation}
+
+where 
+
+
+\begin{equation}
+ sol_1(x, \tau) = u_1^\infty (x) + exp(-A \tau) ( u_0(x) - u_1^\infty(x))
+\end{equation}
+
+NB: L-curve
+
+
+\section{Reconstruction/Observation ?}
+article avec Mario Sigalotti 
+
+
+\end{document}

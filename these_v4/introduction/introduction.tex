@@ -1,0 +1,533 @@
+\paragraph{Switched systems}
+
+Switched systems are a sub-class of hybrid systems, extensively used...
+
+CPS... are good: smart houses, safety critical systems, automotive industry, electrical engineering... 
+
+but complex, no general method...
+
+A first sub-class is switched systems described by ODEs. 
+
+Another important model is PDEs, but much more complex.
+
+We are interested in synthesizing controllers for such systems (switched ODEs and PDEs). 
+many approaches have been developed,
+some are specific for switched systems, others are more general.
+
+\paragraph{Controller synthesis}
+
+Dynamical systems evolve within time. Represented by ODEs.
+
+We want to synthesize controllers in order to ensure some properties such as stability, reachability.
+
+
+
+state of the art of switched systems: lyapunov approaches and theoretical approaches,
+optimal control through optimization... 
+Many results for linear systems. 
+
+
+Here:  Symbolic control, which uses the computer tool with an automated method for 
+(mostly offline) controller synthesis. 
+
+
+All these approaches present the same drawback, they are all subject to the so called 
+{\em curse of dimensionality}, which means that the computational cost of 
+the associated algorithms is exponential in the dimension $n$ of the state. 
+Approaches looking further in time (sequences of control inputs) add an exponential 
+complexity with respect to the number of switching modes and the number 
+of time steps considered.
+
+
+The problem of control synthesis 
+for hybrid and switched systems has been widely studied and various tools exist. 
+The Multi-Parametric Toolbox (MPT 3.0 \cite{MPT3}) for example solves optimal control problems
+using operations on polytopes.
+Most approaches make use of Lyapunov or the so-called ``multiple Lyapunov functions''
+to solve the problem of
+control synthesis for switched systems - see for example \cite{TAB09}. 
+The approximate bisimulation approach 
+abstracts switched systems under the form
+of a discrete model \cite{GIR10a,GIR10b} under certain Lyapunov-based stability conditions.
+The latter approach has been implemented in PESSOA \cite{PESSOA} and CoSyMA \cite{CoSyMA}.
+The approach used in this paper avoids using Lyapunov functions and relies on the notion
+of ``(controlled) invariant'' \cite{BLA99}.
+
+
+\paragraph{Reachability analysis}
+
+can be done for linear systems with zonotopes
+
+require numerical schemes for nonlinear equations
+
+\paragraph{Model Order Reduction}
+
+catch the behavior of a complex system with few variables
+
+permits the extension to high/infinite dimensional systems
+
+\paragraph{Contributions}
+
+Extension to NL systems with interval arithmetics
+
+Extension to NL systems with very cheap Euler's method
+
+Distributed synthesis (equivalent of domain decomposition)
+by taking perturbations into account
+
+High dimensional ODEs with balanced truncation
+
+Guaranteed $L^2$ control of 
+PDEs with Galerkin projection in association with ball-based control synthesis.
+
+
+\section{???}
+
+In this chapter, we introduce the class of systems considered in this thesis, and present 
+the possible approaches for synthesizing controllers for such systems, enlightening
+the underlying difficulties and limits of current methods. At the end of the chapter, 
+we present more precisely an existing method of controller synthesis for a class of
+switched systems, first introduced in \cite{???} [MINIMATOR]. Most of 
+the following developments rely, or are inspired by this method.  
+In the following chapters, we improve this method in different manners, in order to extend its field of 
+application and improve its efficiency.
+
+
+\section{Control of switched systems}
+
+
+In most controller synthesis approaches, the objective is to 
+synthesize a rule $\sigma(\cdot)$ such that, from an initial 
+state $x_0 \in \R^n$ at time $t_0$, the system reaches a target state $x_t \in \R^n$, or 
+gets as close as possible to this target state.
+Because we are in a switched framework, a target state is nearly always not 
+exactly attainable. 
+
+Symbolic approaches.
+
+
+\section{Symbolic control}
+
+
+Several approaches, available for linear and/or nonlinear systems: 
+\begin{itemize}
+  \item finite state abstraction by (alternating) approximate bisimulation [PESSOA]
+  \item finite state abstraction for monotone systems
+ \item $\varepsilon$ bisimulation. [Girard]
+  \item Feedback refinement relations. [SCOTS,Reissig,...]
+  \item [Sriram]
+\end{itemize}
+
+In most cases, need computation of reachable sets
+
+Also, curse of dimensionality, to not scale to dimensions more than $6$.
+
+
+\section{Reachability analysis}
+
+Notation $Post_u$
+
+Basic zonotopes for linear systems
+
+$z=<c,g>$ where $c$ is the center and $g$ are the generators. Then we have
+
+$Z' = <Ac + B,g>...$
+
+Interval analysis allows handling of nonlinear ODEs
+
+[From Butcher ... to DynIbex].
+
+
+\section{Problem of $(R,S)$-stability}
+
+$R$ recurrence set
+
+$S$ safety set
+
+Definition of the general problem of $(R,S)$-stability. 
+
+Definition of the general problem of $(R_1,R_2,S)$-reachability. 
+
+
+
+\section{reachability and RK methods}
+
+\section{Introduction}
+%\subsection{Method of SNR'16 based on Runge-Kutta}
+As said in \cite{NL_minimator},
+in the methods of symbolic analysis and control of
+hybrid systems, the way of representing sets of state values
+and computing reachable sets for systems defined by
+ordinary differential equations (ODEs) is fundamental
+(see, e.g., \cite{Althoff2013a,girard2005reachability}).
+An interesting approach appeared recently, based on the
+propagation of reachable sets using guaranteed Runge-Kutta
+methods with adaptive step size control (see \cite{BMC12,immler2015verified}). In
+\cite{NL_minimator} such guaranteed
+integration methods are used in the framework of {\em sampled switched systems}.
+
+%The approach n SNR'16 for validated
+%simulation is based on the numerical {\em Runge-Kutta} integration method method
+%[9], [10].
+Given an ODE of the form $\dot{x}(t)=f(t,x(t))$, and a {\em set} of initial values $X_0$,
+a symbolic (or ``set-valued'') integration method consists in computing a sequence of
+approximations $(t_n, \tilde{x}_n)$ of the solution $x(t; x_0)$ of the ODE
+with $x_0\in X_0$ such that $\tilde{x}_n \approx x(t_n; x_{n-1})$.
+Symbolic integration methods extend classical {\em numerical} integration methods which correspond to the case where $X_0$ is just a singleton $\{x_0\}$.
+The simplest numerical method is Euler's method in which $t_{n+1} = t_n + h$
+for some step-size $h$ and $\tilde{x}_{n+1} = \tilde{x}_n + h f(t_n,\tilde{x}_n)$; so
+the derivative of $x$ at time $t_n$, $f(t_n, x_n)$, is used as an
+approximation of the derivative on the whole time interval. This method is very simple
+and fast, but requires small step-sizes $h$.
+More advanced
+methods coming from the Runge-Kutta family use a few
+intermediate computations to improve the approximation
+of the derivative. The general form of an explicit $s$-stage
+Runge-Kutta formula
+of the form $\tilde{x}_{n+1}=\tilde{x}_n+h\Sigma_{i=1}^sb_ik_i$
+where $k_i=f(t_n+c_ih, \tilde{x}_n+h\Sigma_{j=1}^{i-1}a_{ij}k_j)$
+for $i=2,3,...,s$.
+A challenging question
+is then to compute a bound on the distance between
+the true solution and the numerical solution, i.e.:
+$\|x(t_n; x_{n-1}) - x_n\|$. This distance is associated to the {\em local
+truncation error} of the numerical method.
+In~\cite{NL_minimator}, 
+%(following the work of \cite{Nedialkov}),
+%[Berz and Makino01,Makino-Berz09,
+%Makino and Berz. Taylor models and other validated functional inclusion methods.
+%J. Pure and Applied Mathematics, vol. 4, no. 4, 2003.
+%Berz and Makino. Verified integration of ODEs and 
+%flows using differential algebraic
+%methods on high-order Taylor models. Reliable Computing, vol. 4, 1998.],
+such a bound is computed using the {\em Lagrange
+remainders} of Taylor expansions.
+This is achieved using {\em affine arithmetic} \cite{AffineA97}
+(by application of the Banach's fixpoint theorem and 
+Picard-Lindel\"of operator, see \cite{Nedialkov}). 
+In the end, the Runge-Kutta based method of \cite{NL_minimator} is an elaborated method
+that requires the use of affine arithmetic, 
+%the manipulation of vectors of intervals, 
+Picard iteration and 
+computation of Lagrange remainder.
+%\subsection{One-sided Lipschitz constant}
+
+In contrast, in this paper, we use ordinary arithmetic
+(instead of affine arithmetic)
+and a basic Euler scheme (instead of Runge-Kutta schemes). We
+need neither estimate Lagrange remainders nor perform Picard iteration
+in combination with Taylor series.
+Our simple Euler-based approach is made possible  by having 
+recourse to the notion of {\em one-sided Lipschitz} (OSL) function
+\cite{Donchev98}.
+This allows us to bound directly the {\em global error},
+i.e. the distance between the approximate point~$\tilde{x}(t)$
+computed by the Euler scheme
+and the exact solution $x(t)$ for all $t\geq 0$
+(see Theorem~\ref{th:1}).
+
+{\bf Plan.}
+In Section \ref{sec:rw}, we give  details on related work.
+In Section \ref{sec:OSL}, we state our main result that bounds
+the global error introduced by the Euler scheme in the context of systems
+with OSL flows.
+In Section~\ref{sec:appl}, we explain how to apply this result
+to the synthesis of symbolic control of sampled switched systems.
+We give numerical experiments and results
+in Section \ref{sec:experiment} for five exampes of the literature,
+and compare them with results obtained with the method of \cite{NL_minimator}.
+We give final remarks in Section \ref{sec:fr}.
+\section{Related work}\label{sec:rw}
+
+Most of the recent work on the symbolic (or set-valued) integration of nonlinear ODEs is based
+on the upper bounding of the Lagrange remainders either in the framework of 
+Taylor series or Runge-Kutta schemes 
+\cite{Althoff2013a,BCD13,BMC12,CAS12,chen2013flow,NL_minimator,Makino2009,report,dit2016validated}.
+Sets of states are generally represented as vectors of intervals 
+(or ``rectangles'')
+and are manipulated  through interval arithmetic \cite{Moore66}
+or affine arithmetic \cite{AffineA97}.
+%
+Taylor expansions with Lagrange remainders are also used in the work
+of \cite{Althoff2013a}, which uses ``polynomial zonotopes'' 
+for representing sets of states in addition to interval vectors.
+%
+None of these works uses
+the Euler scheme nor the notion of one-sided Lipschitz constant.
+
+In the literature on symbolic integration, the Euler scheme with OSL conditions
+is explored in \cite{Donchev98,Lempio95}.
+%
+Our approach is similar but establishes an {\em analytical} result for the global error of Euler's estimate
+(see Theorem \ref{th:1}) rather than analyzing, in terms of complexity,
+the speed of convergence to zero, the accuracy and the stability of Euler's method.
+
+In the control literature, OSL conditions
+have been recently applied to control and stabilization 
+\cite{Abbaszadeh2010,Cai2015},
+but do not make use of Euler's method.
+%
+To our knowledge, our work applies for the first time Euler's scheme
+with OSL conditions to the symbolic
+control of hybrid systems.
+
+
+\section{Euler's method/RK methods}
+
+
+The computation of reachable sets for continuous-time dynamical
+systems has been intensively studied during the last decades.
+%While
+%efficient methods to deal with linear dynamical systems have been
+%defined \cite{LeGuernic2009,Bak2017}, the computation of reachable
+%sets for non-linear systems is still a challenge.
+Most of the methods
+to compute the reachable set start from an \textit{initial value
+  problem} for a system of \textit{ordinary differential equations} (ODE) defined
+by
+\begin{equation}
+  \label{eq:ivp-ode}
+  \dot{x}(t)=f(t,x(t))
+  \quad\text{with}\quad x(0)\in X_0 \subset \mathbb{R}^n
+  \quad\text{and}\quad t\in[0,t_{\text{end}}]\enspace.
+\end{equation}
+%Note that a {\em set} of initial values $X_0$ is considered in
+%Equation~\eqref{eq:ivp-ode}.
+As an analytical solution of
+Equation~\eqref{eq:ivp-ode} is usually not computable, numerical
+approaches have been considered.
+%
+A numerical method to solve Equation~\eqref{eq:ivp-ode}, when $X_0$ is
+reduced to one value, produces a discretization of time, such that
+$t_0 \leqslant \cdots \leqslant t_N = t_{\text{end}}$, and a sequence
+of states $x_0$, \dots, $x_{N}$ based on an integration method
+%$\Phi(f, x, t,h)$
+which starts from an initial value $x_0$ at time
+$t_0$ and a finite time horizon~$h$ (the step-size), produces an
+approximation $x_{k+1}$ at time $t_{k+1} = t_k + h$, of the exact
+solution $x(t_{k+1})$,
+%\textit{i.e.}, $x(t_{n+1}; x_n) \approx \Phi(f, x_n,t_n,h)$
+for all $k = 0,\dots,N-1$. The simplest numerical
+method is Euler's method in which $t_{k+1} = t_k + h$ for some
+step-size $h$ and $x_{k+1} = x_k + h f(t_k,x_k)$; so the derivative of
+$x$ at time $t_k$, $f(t_k, x_k)$, is used as an approximation of the
+derivative on the whole time interval.
+
+%This method is very simple and
+%fast, but requires small step-sizes $h$. More advanced methods, as for
+%example the Runge-Kutta family, use a few intermediate computations to
+%improve the approximation of the derivative.
+
+
+The global error $error(t)$ at $t=t_0+kh$ is equal to
+$\|x(t) -x_{k}\|$.  In case $n=1$, if the solution~$x$  has a bounded second derivative and $f$ is Lipschitz continuous in its second argument, then it
+ satisfies:
+\begin{equation}\label{eqn:error}
+    error(t) \leq {\frac {hM}{2L}}(e^{L(t-t_{0})}-1)
+  \end{equation}
+%  \eqref{eqn:error}
+%    $| GTE | \leq {\frac {hM}{2L}}(e^{L(t-t_{0})}-1)$
+
+where $M$ is an upper bound on the second derivative of $x$ on the given interval and $L$
+is the Lipschitz constant of $f$ \cite{atkinson2008introduction}.
+\footnote{Such a bound has been used in hybridization methods:
+$error(t)=\frac{E_D}{L}(e^{Lt}-1)$ \cite{asarin2007hybridization,chen2016decomposed},
+where $E_D$ gives the maximum difference of the derivatives of the original and approximated systems.}\\
+
+%%The classical result on Euler's method is an asymptotic result, saying that the error $\delta_n$ between the estimated result given by Euler's method after step~$n$ and the exact solution, converges to 0 as the number of steps $n=T/h$  tends to infinity (in O($n$)). This holds if the initial error $\delta_0$ is not ``too big''.
+
+In \cite{SNR17}, we gave an upper bound on the global error $error(t)$,
+which is more precise than (\ref{eqn:error}).
+%under the form
+%of a function $e$ (involving polynomials and exponentials) taking as arguments
+%time $t$ and the initial error $\delta_{0}$ at time $t=0$.
+%
+This upper bound makes use of the notion of
+{\em One-Sided Lipschitz (OSL)} constant. This notion has been used for the first
+time by
+\cite{donchev1998stability}
+in order to treat ``stiff'' systems of differential equations for which the explicit Euler method is
+numerically ``unstable'' (unless the step size is taken to be extremely small).
+%have (in the case of linear equations) eigenvalues of very different modulus.
+%The stability of systems governed by stiff equations is difficult to establish using only  Lipschitz constants.\footnote{The Euler method can also be numerically unstable, especially for stiff equations, meaning that the numerical solution grows very large for equations where the exact solution does not (Wikipedia).}
+%
+Unlike Lipschitz constants, OSL constants can be {\em negative},
+which express a form of contractivity of the system dynamics.
+Even if the OSL constant is positive, it is in practice much lower than
+the Lipschitz constant \cite{dahlquist1976error}. The use of OSL thus allows us to obtain a much
+more precise upper bound for the global error.
+%$|x_n - x(t_n)|$.
+%
+We also explained in \cite{SNR17} how such a precise estimation of the
+global error can be used to synthesize {\em safety controllers} for a special
+form hybrid systems, called ``sampled switched systems''.\\
+
+% In this paper,
+% we explain how such an Euler-based method can be extended to synthesize safety controllers in a {\em distributed} manner. This allows us to control separately a component using only partial information on the other components. It also allows us to scale up the size of the global systems for which a control can be synthesized.\\
+
+
+
+In this paper, we explain how such an Euler-based method can be extended to
+synthesize safety controllers in a {\em distributed} manner. This allows us
+to control separately a component using only partial information on the other
+components. It also allows us to scale up the size of the global systems for
+which a control can be synthesized. In order to perform such a distributed
+synthesis, we will see the components of the global systems as being {\em interconnected}
+(see, \textit{e.g.}, \cite{yang2015lyapunov}),
+and use (a variant of) the notions of {\em incremental input-to-state stability ($\delta$-ISS)}
+and {\em ISS Lyapunov functions}
+\cite{jiang1996lyapunov}
+instead of the notion of OSL used in the centralized framework.\\
+
+
+The plan of the paper is as follows: In Section \ref{sec:background}, we recall the
+results of \cite{SNR17} obtained in the centralized framework; in Section \ref{sec:distributed}
+we extend these results to the framework of distributed systems;
+we then apply the distributed synthesis method to a nontrivial example
+(Section~\ref{sec:application}), and conclude in Section~\ref{sec:conc_part4}.
+
+
+
+
+\section{Introduction}
+\paragraph{Control of switching systems}
+The importance of switching systems has grown up considerably over the
+last years because of their ease of implementation for controlling
+cyber-physical systems.  A~switching system is a family of
+sub-systems, each having its own dynamics, characterized by a
+parameter~$u$ whose values range over a finite set~$U$
+(see~\cite{liberzon2012switching}). However, when composing
+the sub-systems together, the number of modes of the global system
+grows exponentially, and the dynamics may become very complex.
+%has a number of modes and dynamics which increases exponentially.
+It~is therefore essential to design \emph{compositional} analysis techniques
+in order to obtain control methods for switching systems
+with formal correctness guarantees.
+%that give formal guarantees on the correct behaviour of the cyber
+%physical systems.
+
+In this paper, we give a symbolic compositional method that allows to
+synthesize a control of sampled switching systems that is
+guaranteed to satisfy \emph{reachability} and \emph{stability}
+properties.
+%\fbox{NM: description pas tres precise, je trouve}
+The method starts from a (rectangular) target region~$R$ of the state space.
+%which is rectangular (i.e.,~a~product of closed intervals of reals).
+It~then generates in a backward manner an~increasing sequence of
+nested rectangles $\{R^{(i)}\}_{i\geq 0}$ such that any trajectory
+issued from~$R^{(i)}$ is guaranteed to reach~$R^{(i-1)}$ in bounded
+time.  Stability is achieved by requiring that any trajectory from~$R$
+goes back to~$R$ in bounded time.
+%Once~${R^{(0)} = R}$ is reached, the~trajectory is guaranteed
+%to stay in~$R$ indefinitely (stability).
+The method relies on a
+simple operation of \emph{tiling} of the rectangles~$R^{(i)}$ in a
+finite number of sub-rectangles~(tiles), using a standard operation of
+\emph{bisection}.  Although the method works in a backward fashion,
+it~does not require to inverse the linear dynamics of the system, 
+and does not compute \emph{predecessors} of
+symbolic states (tiles): it~computes \emph{successors} using the forward
+dynamics.  This~is useful in order to avoid numerical imprecisions,
+especially when the dynamics are \emph{contractive}, which happens
+often in practical systems (see~\cite{Mitchell07}).
+
+Another contribution of this paper is a technique
+of state \emph{over-approximation} which allows 
+a distributed control synthesis:
+% of local state \emph{over-approximation}
+% of a system component, say $2$:
+this over-approximation allows sub-system~$\mathcal S_1$ to infer a correct value for
+its next local mode~$u_1$ without knowing the exact value of the state
+of sub-system~$\mathcal S_2$.
+This distributed synthesis method is computationally efficient,
+and works in presence of partial observability.
+This is at the cost of the performance of the control,
+which in this case usually makes the delay for reaching the objective longer
+%the trajectories reach the objective area in more steps
+than with a centralized approach.
+
+The main part of the paper deals with the \emph{discrete-time}
+framework.  The last part explains how the results can be extended to the
+\emph{continuous-time} setting.
+%\fbox{NM: + continuous, non-linear case}
+
+\paragraph{Related Work}
+In symbolic analysis and control-synthesis methods for hybrid systems,
+the method of backward reachability and the use of polyhedral symbolic
+states, as used here, is classical
+(see~e.g.~\cite{asarin2000effective,gillula2011applications}). The~use
+of tiling or partitioning the state-space using bisection is also
+classical (see~e.g.~\cite{jaulinbook,girard2012low}).  The~main
+original contribution of this paper is to give a simple technique of
+over-approximation, which allows one component to estimate the
+symbolic states of the other components, in~presence of partial
+information. This~is similar in spirit to an \emph{assume-guarantee}
+(or~\emph{contract-based}) reasoning, where the controller synthesis
+for each sub-system assumes that some safety properties are satisfied
+by the other
+sub-systems~\cite{alur1999reactive,BogomolovFGGPPS14,DallalT15,fribourg2015games,KimAS15,meyer2015safety,Sangiovanni-VincentelliDP12,SmithNO16}.
+The~present work is a continuation of~\cite{fribourg2015games}.
+In~contrast to~\cite{fribourg2015games}, we~do not need, for the mode
+selection of a sub-system, to~blindly explore all the possible modes
+selected by the other sub-system.  This~yields a drastic reduction
+of the complexity\footnote{This separability technique is made
+  possible because the difference equation
+  $x_1(t+1)=f_1(x_1(t),x_2(t),u_1)$ (see~Section~\ref{ss:modes}) does
+  not involve the control mode~$u_2$.}.  This approach allows us to
+treat a real case study, which is intractable using a centralized
+approach.  This case study comes from~\cite{larsen2015online}, and we
+use the same decomposition of the system into two parts (rooms~$1$
+to~$5$ and rooms $6$ to~$11$).  In~contrast to the work
+of~\cite{larsen2015online} which uses an on-line and heuristic
+approach with no formal guarantees, we~use here an off-line formal
+method which guarantees reachability and stability properties.
+% citer Asarin Girard Abate Tomlin Tabuada Henzinger
+% 
+% citer Liberzon (switching systems)
+% 
+% citer Larsen
+% 
+% citer Bicchi
+%
+
+\paragraph{Implementation}
+In the discrete-time setting, with linear (or~affine) mappings,
+the~methods of control synthesis both in the centralized and in the
+distributed contexts have been integrated to the tool
+MINIMATOR~\cite{minimator,fribourg2014finite}, written in
+Octave~\cite{octave}.  In~the continuous-time setting (which also allows
+nonlinear flows), the~methods have been integrated to the tool DynIBEX
+\cite{dynibex,dit2016validated}, written in~C++.  All~the computation
+times given in the paper have been performed on a 2.80GHz Intel Core
+i7-4810MQ CPU with 8GB of memory.
+
+
+\subsection{Introduction}
+\label{intro}
+
+In this paper, we present a control synthesis method for switched
+systems, a class of hybrid systems.  Switched systems have been
+recently used in various domains such as automotive industry and, with
+noteworthy success, power electronics (\emph{e.g.}, power
+converters). Switched systems, continuous-time systems with discrete
+switching events, are close to hybrid systems, at the difference that
+discrete behaviors are neglected. These systems are merely described
+by piecewise dynamics (called modes), switching periodically.
+Precisely, at each period, the system is in one and only one mode,
+decided by a control rule
+\cite{fribourg2014finite,liberzon2012switching}. Moreover, the
+considered systems can switch between any two modes
+instantaneously. This simplification can be easily by-passed by the
+addition of intermediate facticious modes.  We focus here on modes
+represented by nonlinear Ordinary Differential Equations (ODEs).
+Numerical methods to synthesize a controller for switched systems are
+based on simulations of the considered system.
+
+In a previous paper~\cite{NL_minimator}, we proposed an algorithm
+based on validated simulation for the synthesis of nonlinear switched
+system controllers. Here, we present an improved algorithm which
+permits to consider longer patterns (control input sequences) and more
+modes, by the help of a better pruning approach.  It also leads to a
+strong decrease in computation time. The new algorithm allows us to
+handle harder problems than in the previous paper, and to compare our
+method to the state-of-the-art.

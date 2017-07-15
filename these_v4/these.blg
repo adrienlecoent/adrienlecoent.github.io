@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: these.aux
+A level-1 auxiliary file: introduction/introduction.aux
+A level-1 auxiliary file: part_0/part0.aux
+A level-1 auxiliary file: part_1/part1.aux
+A level-1 auxiliary file: part_2/part2.aux
+A level-1 auxiliary file: part_5/part5.aux
+A level-1 auxiliary file: part_6/part6.aux
+A level-1 auxiliary file: appendices/appendix1.aux
+The style file: plain.bst
+Database file #1: biblio.bib
+A bad cross reference---entry "Han-Krogh04"
+refers to entry "DBLP:conf/hybrid/2005", which doesn't exist
+Warning--I didn't find a database entry for "???"
+Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "cain2005separation"
+Warning--I didn't find a database entry for "DBLP:conf/hybrid/2005"
+Warning--can't use both volume and number fields in benner2010balanced
+Warning--empty year in formosa
+Warning--empty journal in maday2007general
+Warning--empty journal in nong2009parameter
+You've used 121 entries,
+            2118 wiz_defined-function locations,
+            1228 strings with 26215 characters,
+and the built_in function-call counts, 46922 in all, are:
+= -- 4808
+> -- 1930
+< -- 63
++ -- 770
+- -- 635
+* -- 3157
+:= -- 7256
+add.period$ -- 393
+call.type$ -- 121
+change.case$ -- 670
+chr.to.int$ -- 0
+cite$ -- 125
+duplicate$ -- 1971
+empty$ -- 3754
+format.name$ -- 635
+if$ -- 10272
+int.to.chr$ -- 0
+int.to.str$ -- 121
+missing$ -- 127
+newline$ -- 607
+num.names$ -- 244
+pop$ -- 744
+preamble$ -- 1
+purify$ -- 558
+quote$ -- 0
+skip$ -- 1523
+stack$ -- 0
+substring$ -- 3300
+swap$ -- 672
+text.length$ -- 63
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 462
+warning$ -- 4
+while$ -- 456
+width$ -- 124
+write$ -- 1356
+(There was 1 error message)

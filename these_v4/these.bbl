@@ -1,0 +1,741 @@
+\begin{thebibliography}{100}
+
+\bibitem{Abbaszadeh2010}
+M.~Abbaszadeh and H.J. Marquez.
+\newblock Nonlinear observer design for one-sided lipschitz systems.
+\newblock In {\em Proceedings of the American Control Conference (ACC)}, pages
+  799--806. IEEE, 2010.
+
+\bibitem{alessandri2007luenberger}
+A.~Alessandri, M.~Baglietto, and G.~Battistelli.
+\newblock Luenberger observers for switching discrete-time linear systems.
+\newblock {\em International Journal of Control}, 80(12):1931--1943, 2007.
+
+\bibitem{alessandri2001}
+A.~Alessandri and P.~Coletta.
+\newblock Design of luenberger observers for a class of hybrid linear systems.
+\newblock In {\em Hybrid systems: computation and control}, pages 7--18.
+  Springer, 2001.
+
+\bibitem{dynibex}
+Julien Alexandre~dit\ Sandretto and Alexandre Chapoutot.
+\newblock Dynibex library.
+\newblock http://perso.ensta-paristech.fr/~chapoutot/dynibex/, 2015.
+
+\bibitem{report}
+Julien Alexandre~dit Sandretto and Alexandre Chapoutot.
+\newblock {Validated Solution of Initial Value Problem for Ordinary
+  Differential Equations based on Explicit and Implicit Runge-Kutta Schemes}.
+\newblock Research report, {ENSTA ParisTech}, 2015.
+
+\bibitem{alexandre2016validated}
+Julien Alexandre~dit Sandretto and Alexandre Chapoutot.
+\newblock Validated explicit and implicit runge-kutta methods.
+\newblock {\em Reliable Computing}, 22:79--103, 2016.
+
+\bibitem{Althoff2013a}
+Matthias Althoff.
+\newblock Reachability analysis of nonlinear systems using conservative
+  polynomialization and non-convex sets.
+\newblock In {\em Hybrid Systems: Computation and Control}, pages 173--182,
+  2013.
+
+\bibitem{althoff2013reachability}
+Matthias Althoff.
+\newblock Reachability analysis of nonlinear systems using conservative
+  polynomialization and non-convex sets.
+\newblock In {\em Proceedings of the 16th international conference on Hybrid
+  systems: computation and control}, pages 173--182. ACM, 2013.
+
+\bibitem{alur1999reactive}
+Rajeev Alur and Thomas~A Henzinger.
+\newblock Reactive modules.
+\newblock {\em Formal Methods in System Design}, 15(1):7--48, 1999.
+
+\bibitem{angeli2000lyapunov}
+David Angeli.
+\newblock A {L}yapunov approach to incremental stability.
+\newblock In {\em Proc. of IEEE Conference on Decision and Control,}, volume~3,
+  pages 2947--2952, 2000.
+
+\bibitem{Antoulas2001}
+A.~Antoulas and D.~C. Sorensen.
+\newblock Approximation of large-scale dynamical systems: an overview.
+\newblock {\em International Journal of Applied Mathematics and Computer
+  Science}, 11(5):1093--1121, 2001.
+
+\bibitem{Antoulas-Sorensen-Gugercin00}
+A.~Antoulas, D.~C. Sorensen, and S.~Gugercin.
+\newblock A survey of model reduction methods for large-scale systems.
+\newblock {\em Contemporary Mathematics}, 280:193--219, 2000.
+
+\bibitem{asarin2000effective}
+Eugene Asarin, Olivier Bournez, Thao Dang, Oded Maler, and Amir Pnueli.
+\newblock Effective synthesis of switching controllers for linear systems.
+\newblock {\em Proceedings of the IEEE}, 88(7):1011--1025, 2000.
+
+\bibitem{asarin2007hybridization}
+Eugene Asarin, Thao Dang, and Antoine Girard.
+\newblock Hybridization methods for the analysis of nonlinear systems.
+\newblock {\em Acta Informatica}, 43(7):451--476, 2007.
+
+\bibitem{astrom2010feedback}
+Karl~Johan Astr{\"o}m and Richard~M. Murray.
+\newblock {\em Feedback systems: an introduction for scientists and engineers}.
+\newblock Princeton university press, 2010.
+
+\bibitem{atkinson2008introduction}
+Kendall~E Atkinson.
+\newblock {\em An introduction to numerical analysis}.
+\newblock John Wiley \& Sons, 2008.
+
+\bibitem{azam1994nonlinear}
+M.~Azam, S.~N. Singh, A.~Iyer, and Y.P. Kakad.
+\newblock Nonlinear rotational maneuver and vibration damping of nasa scole
+  system.
+\newblock {\em Acta Astronautica}, 32(3):211--220, 1994.
+
+\bibitem{Moussa-Jouan2011}
+M.~Balde and P.~Jouan.
+\newblock Geometry of the limit sets of linear switched systems.
+\newblock {\em SIAM J. Control Optim.}, 49(3):1048--1063, 2011.
+
+\bibitem{beccuti2005optimal}
+Andrea~Giovanni Beccuti, Georgios Papafotiou, and Manfred Morari.
+\newblock Optimal control of the boost {DC-DC} converter.
+\newblock In {\em Decision and Control, 2005 and 2005 European Control
+  Conference. CDC-ECC'05. 44th IEEE Conference on}, pages 4457--4462. IEEE,
+  2005.
+
+\bibitem{benner2008numerical}
+P.~Benner, J.-R. Li, and T.~Penzl.
+\newblock Numerical solution of large-scale lyapunov equations, riccati
+  equations, and linear-quadratic optimal control problems.
+\newblock {\em Numerical Linear Algebra with Applications}, 15(9):755--777,
+  2008.
+
+\bibitem{benner2010balanced}
+P.~Benner and A.~Schneider.
+\newblock Balanced truncation model order reduction for lti systems with many
+  inputs or outputs.
+\newblock In {\em Proceedings of the 19th international symposium on
+  mathematical theory of networks and systems--MTNS}, volume~5, 2010.
+
+\bibitem{Beyn2010}
+W.-J. Beyn and J.~Rieger.
+\newblock The implicit euler scheme for one-sided lipschitz differential
+  inclusions.
+\newblock {\em Discr. and Cont. Dynamical Systems}, B(14):409--428, 1998.
+
+\bibitem{BLA99}
+F.~Blanchini.
+\newblock Set invariance in control.
+\newblock {\em Automatica}, 35(11):1747 -- 1767, 1999.
+
+\bibitem{BogomolovFGGPPS14}
+Sergiy Bogomolov, Goran Frehse, Marius Greitschus, Radu Grosu, Corina~S.
+  Pasareanu, Andreas Podelski, and Thomas Strump.
+\newblock Assume-guarantee abstraction refinement meets hybrid systems.
+\newblock In {\em Hardware and Software: Verification and Testing - 10th
+  International Haifa Verification Conference, {HVC} 2014, Haifa, Israel,
+  November 18-20, 2014. Proceedings}, pages 116--131, 2014.
+
+\bibitem{BCD13}
+Olivier Bouissou, Alexandre Chapoutot, and Adel Djoudi.
+\newblock Enclosing temporal evolution of dynamical systems using numerical
+  methods.
+\newblock In {\em NASA Formal Methods}, number 7871 in LNCS, pages 108--123.
+  Springer, 2013.
+
+\bibitem{BM06}
+Olivier Bouissou and Matthieu Martel.
+\newblock {GRKLib: a Guaranteed Runge Kutta Library}.
+\newblock In {\em {Scientific Computing, Computer Arithmetic and Validated
+  Numerics}}, 2006.
+
+\bibitem{BMC12}
+Olivier Bouissou, Samuel Mimram, and Alexandre Chapoutot.
+\newblock {HySon}: Set-based simulation of hybrid systems.
+\newblock In {\em Rapid System Prototyping}. IEEE, 2012.
+
+\bibitem{Cai2015}
+Xiushan Cai, Zhenyun Wang, and Leipo Liu.
+\newblock Control design for one-side lipschitz nonlinear differential
+  inclusion systems with time-delay.
+\newblock {\em Neurocomput.}, 165(C):182--189, October 2015.
+
+\bibitem{CAS12}
+Xin Chen, Erika Abraham, and Sriram Sankaranarayanan.
+\newblock Taylor model flowpipe construction for non-linear hybrid systems.
+\newblock In {\em IEEE 33rd Real-Time Systems Symposium}, pages 183--192. IEEE
+  Computer Society, 2012.
+
+\bibitem{chen2013flow}
+Xin Chen, Erika {\'A}brah{\'a}m, and Sriram Sankaranarayanan.
+\newblock Flow*: An analyzer for non-linear hybrid systems.
+\newblock In {\em Computer Aided Verification}, pages 258--263. Springer, 2013.
+
+\bibitem{chen2016decomposed}
+Xin Chen and Sriram Sankaranarayanan.
+\newblock Decomposed reachability analysis for nonlinear systems.
+\newblock In {\em Proc. of IEEE Real-Time Systems Symposium}, pages 13--24,
+  2016.
+
+\bibitem{chinesta2011short}
+F.~Chinesta, P.~Ladeveze, and E.~Cueto.
+\newblock A short review on model order reduction based on proper generalized
+  decomposition.
+\newblock {\em Archives of Computational Methods in Engineering},
+  18(4):395--404, 2011.
+
+\bibitem{chinesta2010recent}
+Francisco Chinesta, Amine Ammar, and El{\'\i}as Cueto.
+\newblock Recent advances and new challenges in the use of the proper
+  generalized decomposition for solving multidimensional models.
+\newblock {\em Archives of Computational methods in Engineering},
+  17(4):327--350, 2010.
+
+\bibitem{clark2000vibration}
+W.~Clark.
+\newblock Vibration control with state-switched piezoelectric materials.
+\newblock {\em Journal of intelligent material systems and structures},
+  11(4):263--271, 2000.
+
+\bibitem{cordier_POD}
+L.~Cordier and M.~Bergmann.
+\newblock {Proper Orthogonal Decomposition: an overview}.
+\newblock In {\em {Lecture series 2002-04, 2003-03 and 2008-01 on
+  post-processing of experimental and numerical data, Von Karman Institute for
+  Fluid Dynamics, 2008.}}, page 46 pages. {VKI}, 2008.
+
+\bibitem{dahlquist1976error}
+Germund Dahlquist.
+\newblock Error analysis for a class of methods for stiff non-linear initial
+  value problems.
+\newblock {\em Numerical analysis}, pages 60--72, 1976.
+
+\bibitem{DallalT15}
+Eric Dallal and Paulo Tabuada.
+\newblock On compositional symbolic controller synthesis inspired by small-gain
+  theorems.
+\newblock In {\em 54th {IEEE} Conference on Decision and Control, {CDC} 2015,
+  Osaka, Japan, December 15-18, 2015}, pages 6133--6138. {IEEE}, 2015.
+
+\bibitem{dallal2015compositional}
+Eric Dallal and Paulo Tabuada.
+\newblock On compositional symbolic controller synthesis inspired by small-gain
+  theorems.
+\newblock In {\em Proc. of IEEE Conference on Decision and Control}, pages
+  6133--6138, 2015.
+
+\bibitem{AffineA97}
+Luis~Henrique de~Figueiredo and Jorge Stolfi.
+\newblock {\em Self-Validated Numerical Methods and Applications}.
+\newblock Brazilian Mathematics Colloquium monographs. IMPA/CNPq, 1997.
+
+\bibitem{ding2011reachability}
+Jerry Ding, Eugene Li, Haomiao Huang, and Claire~J Tomlin.
+\newblock Reachability-based synthesis of feedback policies for motion planning
+  under bounded disturbances.
+\newblock In {\em Robotics and Automation (ICRA), 2011 IEEE International
+  Conference on}, pages 2160--2165. IEEE, 2011.
+
+\bibitem{dit2016validated}
+Julien~Alexandre dit Sandretto and Alexandre Chapoutot.
+\newblock Validated explicit and implicit runge-kutta methods.
+\newblock {\em Reliable Computing}, 22:79--103, 2016.
+
+\bibitem{Donchev98}
+Tzanko Donchev and Elza Farkhi.
+\newblock Stability and euler approximation of one-sided lipschitz differential
+  inclusions.
+\newblock {\em SIAM J. Control Optim.}, 36(2):780--796, 1998.
+
+\bibitem{donchev1998stability}
+Tzanko Donchev and Elza Farkhi.
+\newblock Stability and euler approximation of one-sided lipschitz differential
+  inclusions.
+\newblock {\em SIAM journal on control and optimization}, 36(2):780--796, 1998.
+
+\bibitem{Dzetkulic:2015fk}
+Tom{\'a}{\v s} Dzetkuli{\v c}.
+\newblock Rigorous integration of non-linear ordinary differential equations in
+  {Chebyshev} basis.
+\newblock {\em Numerical Algorithms}, 69(1):183--205, 2015.
+
+\bibitem{eftang2010posteriori}
+Jens~L Eftang, Martin~A Grepl, and Anthony~T Patera.
+\newblock A posteriori error bounds for the empirical interpolation method.
+\newblock {\em Comptes Rendus Mathematique}, 348(9-10):575--579, 2010.
+
+\bibitem{eggers2008sat}
+Andreas Eggers, Martin Fr{\"a}nzle, and Christian Herde.
+\newblock {SAT} modulo {ODE}: A direct {SAT} approach to hybrid systems.
+\newblock In {\em Automated Technology for Verification and Analysis}, volume
+  5311 of {\em LNCS}, pages 171--185. Springer, 2008.
+
+\bibitem{formosa}
+F.~Formosa.
+\newblock Contr\^ole actif des vibrations des structures type poutre.
+\newblock {\em Private report}.
+
+\bibitem{frehse2011spaceex}
+Goran Frehse, Colas Le~Guernic, Alexandre Donz{\'e}, Scott Cotton, Rajarshi
+  Ray, Olivier Lebeltel, Rodolfo Ripado, Antoine Girard, Thao Dang, and Oded
+  Maler.
+\newblock {SpaceEx}: Scalable verification of hybrid systems.
+\newblock In {\em Computer Aided Verification}, volume 6806 of {\em LNCS},
+  pages 379--395. Springer, 2011.
+
+\bibitem{FKS-safety}
+L.~Fribourg, U.~K{\"u}hne, and R.~Soulat.
+\newblock Finite controlled invariants for sampled switched systems.
+\newblock {\em Formal Methods in System Design}, 45(3):303--329, December 2014.
+
+\bibitem{fribourg2015games}
+Laurent Fribourg, Ulrich K{\"u}hne, and Nicolas Markey.
+\newblock {Game-based Synthesis of Distributed Controllers for Sampled Switched
+  Systems}.
+\newblock In {\em 2nd International Workshop on Synthesis of Complex Parameters
+  (SynCoP'15)}, volume~44 of {\em OpenAccess Series in Informatics (OASIcs)},
+  pages 48--62, Dagstuhl, Germany, 2015.
+
+\bibitem{fribourg2014finite}
+Laurent Fribourg, Ulrich K{\"u}hne, and Romain Soulat.
+\newblock Finite controlled invariants for sampled switched systems.
+\newblock {\em Formal Methods in System Design}, 45(3):303--329, 2014.
+
+\bibitem{Gajda:2008fk}
+Karol Gajda, Ma{\l}gorzata Jankowska, Andrzej Marciniak, and Barbara Szyszka.
+\newblock A survey of interval {R}unge--{K}utta and multistep methods for
+  solving the initial value problem.
+\newblock In {\em Parallel Processing and Applied Mathematics}, volume 4967 of
+  {\em LNCS}, pages 1361--1371. Springer Berlin Heidelberg, 2008.
+
+\bibitem{gillula2011applications}
+Jeremy~H Gillula, Gabriel~M Hoffmann, Haomiao Huang, Michael~P Vitus, and
+  Claire Tomlin.
+\newblock Applications of hybrid reachability analysis to robotic aerial
+  vehicles.
+\newblock {\em The International Journal of Robotics Research}, page
+  0278364910387173, 2011.
+
+\bibitem{GIR10a}
+A.~Girard.
+\newblock Synthesis using approximately bisimilar abstractions: state-feedback
+  controllers for safety specifications.
+\newblock In {\em Proceedings of the 13th ACM international conference on
+  Hybrid systems: computation and control}, pages 111--120. ACM, 2010.
+
+\bibitem{GIR10b}
+A.~Girard, G.~Pola, and P.~Tabuada.
+\newblock Approximately bisimilar symbolic models for incrementally stable
+  switched systems.
+\newblock {\em Automatic Control, IEEE Transactions on}, 55(1):116--126, Jan
+  2010.
+
+\bibitem{girard2005reachability}
+Antoine Girard.
+\newblock Reachability of uncertain linear systems using zonotopes.
+\newblock In {\em Hybrid Systems: Computation and Control}, pages 291--305.
+  Springer, 2005.
+
+\bibitem{Girard05}
+Antoine Girard.
+\newblock Reachability of uncertain linear systems using zonotopes.
+\newblock In {\em Hybrid Systems: Computation and Control, 8th International
+  Workshop, {HSCC} 2005, Zurich, Switzerland, March 9-11, 2005, Proceedings},
+  pages 291--305, 2005.
+
+\bibitem{girard2012low}
+Antoine Girard.
+\newblock Low-complexity switching controllers for safety using symbolic
+  models.
+\newblock {\em IFAC Proceedings Volumes}, 45(9):82--87, 2012.
+
+\bibitem{girard2010approximately}
+Antoine Girard, Giordano Pola, and Paulo Tabuada.
+\newblock Approximately bisimilar symbolic models for incrementally stable
+  switched systems.
+\newblock {\em IEEE Transactions on Automatic Control}, 55(1):116--126, 2010.
+
+\bibitem{gunawan2001comparison}
+R.~Gunawan, E.~L. Russell, and R.~D. Braatz.
+\newblock Comparison of theoretical and computational characteristics of
+  dimensionality reduction methods for large-scale uncertain systems.
+\newblock {\em Journal of Process Control}, 11(5):543--552, 2001.
+
+\bibitem{hagood1991}
+N.~W. {Hagood} and A.~{von Flotow}.
+\newblock {Damping of structural vibrations with piezoelectric materials and
+  passive electrical networks}.
+\newblock {\em Journal of Sound Vibration}, 146:243--268, April 1991.
+
+\bibitem{HNW93}
+Ernst Hairer, Syvert~Paul Norsett, and Grehard Wanner.
+\newblock {\em Solving Ordinary Differential Equations~{I}: Nonstiff Problems}.
+\newblock Springer-Verlag, 2nd edition, 2009.
+
+\bibitem{Han-Krogh04}
+Z.~Han and B.~H. Krogh.
+\newblock Reachability analysis of hybrid systems using reduced-order models.
+\newblock In {\em American Control Conference}, pages 1183--1189. IEEE, 2004.
+
+\bibitem{han_krogh_06}
+Z.~Han and B.~H. Krogh.
+\newblock Reachability analysis of large-scale affine systems using
+  low-dimensional polytopes.
+\newblock In J.~Hespanha and A.~Tiwari, editors, {\em Hybrid Systems:
+  Computation and Control}, volume 3927 of {\em Lecture Notes in Computer
+  Science}, pages 287--301. Springer Berlin Heidelberg, 2006.
+
+\bibitem{MPT3}
+M.~Herceg, M.~Kvasnica, C.N. Jones, and M.~Morari.
+\newblock {Multi-Parametric Toolbox 3.0}.
+\newblock In {\em Proc.~of the European Control Conference}, pages 502--510,
+  Z\"urich, Switzerland, July 17--19 2013.
+
+\bibitem{hespanha2008lyapunov}
+Jo{\~a}o~P Hespanha, Daniel Liberzon, and Andrew~R Teel.
+\newblock {L}yapunov conditions for input-to-state stability of impulsive
+  systems.
+\newblock {\em Automatica}, 44(11):2735--2744, 2008.
+
+\bibitem{hiskens2001stability}
+Ian~A Hiskens.
+\newblock Stability of limit cycles in hybrid systems.
+\newblock In {\em System Sciences, 2001. Proceedings of the 34th Annual Hawaii
+  International Conference on}. IEEE, 2001.
+
+\bibitem{immler2015verified}
+Fabian Immler.
+\newblock Verified reachability analysis of continuous systems.
+\newblock In {\em Tools and Algorithms for the Construction and Analysis of
+  Systems}, volume 9035 of {\em LNCS}, pages 37--51. Springer, 2015.
+
+\bibitem{jaulinbook}
+L.~Jaulin, M.~Kieffer, O.~Didrit, and E.~Walter.
+\newblock {\em Applied Interval Analysis with Examples in Parameter and State
+  Estimation, Robust Control and Robotics}.
+\newblock Springer-Verlag, 2001.
+
+\bibitem{JKDW01}
+Luc Jaulin, Michel Kieffer, Olivier Didrit, and Eric Walter.
+\newblock {\em {Applied Interval Analysis}}.
+\newblock Springer, 2001.
+
+\bibitem{ji2014semi}
+H.~Ji, J.~Qiu, H.~Nie, and L.~Cheng.
+\newblock Semi-active vibration control of an aircraft panel using synchronized
+  switch damping method.
+\newblock {\em International Journal of Applied Electromagnetics and
+  Mechanics}, 46(4), 2014.
+
+\bibitem{jiang1994small}
+Z-P Jiang, Andrew~R Teel, and Laurent Praly.
+\newblock Small-gain theorem for {ISS} systems and applications.
+\newblock {\em Mathematics of Control, Signals, and Systems}, 7(2):95--120,
+  1994.
+
+\bibitem{jiang1996lyapunov}
+Zhong-Ping Jiang, Iven~MY Mareels, and Yuan Wang.
+\newblock A {L}yapunov formulation of the nonlinear small-gain theorem for
+  interconnected iss systems.
+\newblock {\em Automatica}, 32(8):1211--1215, 1996.
+
+\bibitem{POD1}
+G.~Kerschen, J.-C. Golinval, A.~Vakakis, and L.~Bergman.
+\newblock The method of proper orthogonal decomposition for dynamical
+  characterization and order reduction of mechanical systems: An overview.
+\newblock {\em Nonlinear Dynamics}, 41(1-3):147--169, 2005.
+
+\bibitem{KhatibGD16}
+Mohammad~Al Khatib, Antoine Girard, and Thao Dang.
+\newblock Verification and synthesis of timing contracts for embedded
+  controllers.
+\newblock In {\em Proceedings of the 19th International Conference on Hybrid
+  Systems: Computation and Control, {HSCC} 2016, Vienna, Austria, April 12-14,
+  2016}, pages 115--124, 2016.
+
+\bibitem{KimAS15}
+Eric~S. Kim, Murat Arcak, and Sanjit~A. Seshia.
+\newblock Compositional controller synthesis for vehicular traffic networks.
+\newblock In {\em 54th {IEEE} Conference on Decision and Control, {CDC} 2015,
+  Osaka, Japan, December 15-18, 2015}, pages 6165--6171, 2015.
+
+\bibitem{kim2015compositional}
+Eric~S Kim, Murat Arcak, and Sanjit~A Seshia.
+\newblock Compositional controller synthesis for vehicular traffic networks.
+\newblock In {\em Proc. of IEEE Annual Conference on Decision and Control},
+  pages 6165--6171, 2015.
+
+\bibitem{minimator}
+Ulrich K\"uhne and Romain Soulat.
+\newblock Minimator 1.0.
+\newblock https://bitbucket.org/ukuehne/minimator/overview, 2015.
+
+\bibitem{larsen2015online}
+Kim~G Larsen, Marius Miku{\v{c}}ionis, Marco Muniz, Jiri Srba, and Jakob~Haahr
+  Taankvist.
+\newblock Online and compositional learning of controllers with application to
+  floor heating.
+\newblock In {\em Tools and Algorithms for Construction and Analysis of Systems
+  (TACAS),22nd International Conference}, 2016.
+
+\bibitem{NL_minimator}
+Adrien Le~Co{\"e}nt, Julien Alexandre~dit Sandretto, Alexandre Chapoutot, and
+  Laurent Fribourg.
+\newblock Control of nonlinear switched systems based on validated simulation.
+\newblock In {\em Workshop on Symbolic and Numerical Methods for Reachability
+  Analysis}, pages 1--6. IEEE, 2016.
+
+\bibitem{SNR17}
+Adrien Le~Co\"ent, Florian De~Vuyst, Ludovic Chamoin, and Laurent Fribourg.
+\newblock Control synthesis of nonlinear sampled switched systems using
+  {E}uler's method.
+\newblock In {\em Proc. of International Workshop on Symbolic and Numerical
+  Methods for Reachability Analysis}, volume 247 of {\em EPTCS}, pages 18--33.
+  Open Publishing Association, 2017.
+
+\bibitem{le2016control}
+Adrien Le~Co{\"e}nt, Florian de~Vuyst, Christian Rey, Ludovic Chamoin, and
+  Laurent Fribourg.
+\newblock Control of mechanical systems using set based methods.
+\newblock {\em International Journal of Dynamics and Control}, pages 1--17,
+  2016.
+
+\bibitem{LeCoent2016}
+Adrien Le~Co{\"e}nt, Laurent Fribourg, Nicolas Markey, Florian de~Vuyst, and
+  Ludovic Chamoin.
+\newblock Distributed synthesis of state-dependent switching control.
+\newblock In {\em Workshop on Reachability Problems}, volume 9899 of {\em
+  LNCS}, pages 119--133. Springer, 2016.
+
+\bibitem{le2016distributed}
+Adrien Le~Co{\"e}nt, Laurent Fribourg, Nicolas Markey, Florian De~Vuyst, and
+  Ludovic Chamoin.
+\newblock Distributed synthesis of state-dependent switching control.
+\newblock In {\em International Workshop on Reachability Problems}, pages
+  119--133. Springer, 2016.
+
+\bibitem{Lempio95}
+Frank Lempio.
+\newblock Set-valued interpolation, differential inclusions, and sensitivity in
+  optimization.
+\newblock In {\em Recent Developments in Well-Posed Variational Problems},
+  pages 137--169. Kluwer Academic Publishers, 1995.
+
+\bibitem{liberzon2012switching}
+Daniel Liberzon.
+\newblock {\em Switching in systems and control}.
+\newblock Springer, 2012.
+
+\bibitem{LiSt07}
+Youdong Lin and Mark~A. Stadtherr.
+\newblock Validated solutions of initial value problems for parametric odes.
+\newblock {\em Appl. Numer. Math.}, 57(10):1145--1162, 2007.
+
+\bibitem{liu2013synthesis}
+Jun Liu, Necmiye Ozay, Ufuk Topcu, and Richard~M. Murray.
+\newblock Synthesis of reactive switching protocols from temporal logic
+  specifications.
+\newblock {\em Automatic Control, IEEE Transactions on}, 58(7):1771--1785,
+  2013.
+
+\bibitem{Lohner87}
+Rudolf~J. Lohner.
+\newblock Enclosing the solutions of ordinary initial and boundary value
+  problems.
+\newblock {\em Computer Arithmetic}, pages 255--286, 1987.
+
+\bibitem{maday2007general}
+Yvon Maday, Ngoc~Cuong Nguyen, Anthony~T Patera, and George~SH Pau.
+\newblock A general, multipurpose interpolation procedure: the magic points.
+\newblock 2007.
+
+\bibitem{Makino2009}
+Kyoko Makino and Martin Berz.
+\newblock Rigorous integration of flows and odes using taylor models.
+\newblock In {\em Proceedings of the 2009 Conference on Symbolic Numeric
+  Computation}, SNC '09, pages 79--84, New York, USA, 2009. ACM.
+
+\bibitem{Mazo2010}
+Manuel Mazo, Anna Davitian, and Paulo Tabuada.
+\newblock {\em {PESSOA}: A Tool for Embedded Controller Synthesis}, volume 6174
+  of {\em LNCS}, pages 566--569.
+\newblock Springer, 2010.
+
+\bibitem{PESSOA}
+M.~Mazo~Jr., A.~Davitian, and P.~Tabuada.
+\newblock Pessoa: A tool for embedded controller synthesis.
+\newblock In T.~Touili, B.~Cook, and P.~Jackson, editors, {\em Computer Aided
+  Verification}, volume 6174 of {\em Lecture Notes in Computer Science}, pages
+  566--569. Springer Berlin Heidelberg, 2010.
+
+\bibitem{meyer:tel-01232640}
+Pierre-Jean Meyer.
+\newblock {\em {Invariance and symbolic control of cooperative systems for
+  temperature regulation in intelligent buildings}}.
+\newblock Theses, {Universit{\'e} Grenoble Alpes}, September 2015.
+
+\bibitem{meyer2015safety}
+Pierre-Jean Meyer, Antoine Girard, and Emmanuel Witrant.
+\newblock Safety control with performance guarantees of cooperative systems
+  using compositional abstractions.
+\newblock {\em IFAC-PapersOnLine}, 48(27):317--322, 2015.
+
+\bibitem{meyer2014ecc}
+Pierre-Jean Meyer, Hosein Nazarpour, Antoine Girard, and Emmanuel Witrant.
+\newblock Experimental implementation of {UFAD} regulation based on robust
+  controlled invariance.
+\newblock In {\em European Control Conference}, pages 1468--1473, 2014.
+
+\bibitem{Mitchell07}
+Ian~M. Mitchell.
+\newblock Comparing forward and backward reachability as tools for safety
+  analysis.
+\newblock In {\em {HSCC} 2007, Pisa, Italy, April 3-5, 2007, Proceedings},
+  pages 428--443, 2007.
+
+\bibitem{moheimani2006}
+S.O.~R. Moheimani and A.J. Fleming.
+\newblock {\em Piezoelectric transducers for vibration control and damping}.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{Moore81}
+B.~C. Moore.
+\newblock Principal component analysis in linear systems: Controllability,
+  observability and model reduction.
+\newblock {\em IEEE Transaction on Automatic Control}, 26(1), 1981.
+
+\bibitem{Moore66}
+Ramon Moore.
+\newblock {\em Interval Analysis}.
+\newblock Prentice Hall, 1966.
+
+\bibitem{CoSyMA}
+S.~Mouelhi, A.~Girard, and G.~Goessler.
+\newblock {CoSyMA: a tool for controller synthesis using multi-scale
+  abstractions}.
+\newblock In {\em {HSCC'13 - 16th International Conference on Hybrid systems:
+  computation and control}}, pages 83--88, Philadelphie, United States, April
+  2013. {ACM}.
+
+\bibitem{Nedialkov}
+Nedialko~S. Nedialkov, Kenneth Jackson~R., and Georges~F. Corliss.
+\newblock Validated solutions of initial value problems for ordinary
+  differential equations.
+\newblock {\em Appl. Math. and Comp.}, 105(1):21 -- 68, 1999.
+
+\bibitem{nong2009parameter}
+R.~Nong and D.~C. Sorensen.
+\newblock A parameter free adi-like method for the numerical solution of large
+  scale lyapunov equations.
+\newblock 2009.
+
+\bibitem{octave}
+{Octave} {W}eb page.
+\newblock {http://www.gnu.org/software/octave/}.
+
+\bibitem{ramaratnam2004semi}
+A.~Ramaratnam, N.~Jalili, and D.~M. Dawson.
+\newblock Semi-active vibration control using piezoelectric-based switched
+  stiffness.
+\newblock In {\em American Control Conference, 2004. Proceedings of the 2004},
+  volume~6, pages 5461--5466. IEEE, 2004.
+
+\bibitem{reissig2015feedback}
+Gunther Reissig, Alexander Weber, and Matthias Rungger.
+\newblock Feedback refinement relations for the synthesis of symbolic
+  controllers.
+\newblock {\em arXiv preprint arXiv:1503.03715}, 2015.
+
+\bibitem{Riedinger-Sigalotti-Daafouz2010}
+P.~Riedinger, M.~Sigalotti, and J.~Daafouz.
+\newblock On the algebraic characterization of invariant sets of switched
+  linear systems.
+\newblock {\em Automatica J. IFAC}, 46(6):1047--1052, 2010.
+
+\bibitem{roweis2000nonlinear}
+S.~T. Roweis and L.~K. Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock {\em Science}, 290(5500):2323--2326, 2000.
+
+\bibitem{SCOTS}
+Matthias Rungger and Majid Zamani.
+\newblock {SCOTS}: A tool for the synthesis of symbolic controllers.
+\newblock In {\em Proceedings of the 19th International Conference on Hybrid
+  Systems: Computation and Control}, pages 99--104. ACM, 2016.
+
+\bibitem{salah2015synthesis}
+A.~A.~H. Salah, T.~Garna, J.~Ragot, and H.~Messaoud.
+\newblock Synthesis of a robust controller with reduced dimension by the loop
+  shaping design procedure and decomposition based on laguerre functions.
+\newblock {\em Transactions of the Institute of Measurement and Control}, page
+  0142331215583101, 2015.
+
+\bibitem{sangiovanni2012taming}
+Alberto Sangiovanni-Vincentelli, Werner Damm, and Roberto Passerone.
+\newblock Taming dr. frankenstein: Contract-based design for cyber-physical
+  systems.
+\newblock {\em European journal of control}, 18(3):217--238, 2012.
+
+\bibitem{Sangiovanni-VincentelliDP12}
+Alberto~L. Sangiovanni-Vincentelli, Werner Damm, and Roberto Passerone.
+\newblock Taming dr. frankenstein: Contract-based design for cyber-physical
+  systems.
+\newblock {\em Eur. J. Control}, 18(3):217--238, 2012.
+
+\bibitem{serres2011convergence}
+U.~Serres, J.-C. Vivalda, and P.~Riedinger.
+\newblock On the convergence of linear switched systems.
+\newblock {\em IEEE Transactions on Automatic Control}, 56(2):320--332, 2011.
+
+\bibitem{shahruz1998}
+S.~M. Shahruz.
+\newblock Boundary control of the axially moving kirchhoff string.
+\newblock {\em Automatica}, 34(10):1273--1277, 1998.
+
+\bibitem{SmithNO16}
+Stanley~W. Smith, Petter Nilsson, and Necmiye Ozay.
+\newblock Interdependence quantification for compositional control synthesis
+  with an application in vehicle safety systems.
+\newblock In {\em 55th {IEEE} Conference on Decision and Control, {CDC} 2016,
+  Las Vegas, NV, USA, December 12-14, 2016}, pages 5700--5707, 2016.
+
+\bibitem{TAB09}
+P.~Tabuada.
+\newblock {\em Verification and control of hybrid systems: a symbolic
+  approach}.
+\newblock Springer Science \& Business Media, 2009.
+
+\bibitem{Willcox02}
+K.~Willcox and J.~Peraire.
+\newblock Balanced model reduction via the proper orthogonal decomposition.
+\newblock {\em AIAA Journal}, pages 2323--2330, 2002.
+
+\bibitem{yang2015lyapunov}
+Guosong Yang and Daniel Liberzon.
+\newblock A lyapunov-based small-gain theorem for interconnected switched
+  systems.
+\newblock {\em Systems \& Control Letters}, 78:47--54, 2015.
+
+\bibitem{zamani2012symbolic}
+Majid Zamani, Giordano Pola, Manuel Mazo, and Paulo Tabuada.
+\newblock Symbolic models for nonlinear control systems without stability
+  assumptions.
+\newblock {\em IEEE Transactions on Automatic Control}, 57(7):1804--1809, 2012.
+
+\bibitem{ELO1987}
+M.~Zeitz.
+\newblock The extended luenberger observer for nonlinear systems.
+\newblock {\em Systems \& Control Letters}, 9(2):149--156, 1987.
+
+\bibitem{zienkiewicz1987simple}
+Olgierd~C Zienkiewicz and Jian~Z Zhu.
+\newblock A simple error estimator and adaptive procedure for practical
+  engineerng analysis.
+\newblock {\em International journal for numerical methods in engineering},
+  24(2):337--357, 1987.
+
+\end{thebibliography}
