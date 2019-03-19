@@ -19,7 +19,7 @@ body {
 	padding:0;
 	background-color:#333;
 	color:#333;
-	font-family:Georgia;
+	font-family:Arial;
 }
 
 #container {
@@ -57,7 +57,7 @@ body {
 	
 
 	margin:0;
-	font-family: Georgia;
+	font-family: Arial;
 
 	background-image: url(tree390.jpg) ;
 	background-repeat: no-repeat;
